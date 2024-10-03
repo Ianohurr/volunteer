@@ -1,0 +1,29 @@
+{
+  "name": "volunteer",
+  "version": "1.0.0",
+  "description": "amazon web scraper",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"ts-node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ianohurr/volunteer.git"
+  },
+  "keywords": [
+    "amazon",
+    "web",
+    "scraper"
+  ],
+  "author": "Ian OHeir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ianohurr/volunteer/issues"
+  },
+  "homepage": "https://github.com/Ianohurr/volunteer#readme",
+  "dependencies": {
+    "puppeteer": "^23.5.0",
+    "typescript": "^5.6.2"
+  }
+}
