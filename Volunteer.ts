@@ -24,12 +24,10 @@ export class Volunteer {
     const searchButton = await this.page.$("#nav-search-submit-button");
     await searchButton.click();
     if (sortBy) {
-      const sortByButton = await this.page.$("#s-result-sort-select");
-      await sortByButton.click();
-      // const sortById = getSortById(sortBy);
-      // console.log(sortById);
-      // const sortByOption = await this.page.$(`#${sortById}`);
-      // sortByOption.click();
+      await this.page.locator(".a-button-dropdown").click();
+      const sortById = getSortById(sortBy);
+      const sortByOption = await this.page.$(`#${sortById}`);
+      sortByOption.click();
     }
   }
 
