@@ -27,7 +27,7 @@ export class Volunteer {
       await this.page.locator(".a-button-dropdown").click();
       const sortById = getSortById(sortBy);
       const sortByOption = await this.page.$(`#${sortById}`);
-      sortByOption.click();
+      await sortByOption.click();
     }
   }
 
